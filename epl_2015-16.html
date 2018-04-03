@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="epl_2015-16.css">    
+</head>
+
+<body>
+    
+    <div class="heading">
+        <h2 align="center">
+            EPL 2015-16 Match Statistics
+        </h2>
+        
+    
+    </div>
+    <div class="legend">
+        P: Played, W: Won, D: Drawn, L: Lost
+    </div>
+    
+     <div class="seventh">
+        <img src="Photos/Leicester%20City%20FC_logo.svg" id="leicesterlogo" style="width:100px;height:100px;"><p class="teamnames leicester">Leicester</p>
+         <div class="stats">
+         <div class="leicesterbuttons">
+             <div><button class="played activate" id="leicesterplayed" onclick="showLeicesterPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="leicesterwon" onclick="showLeicesterWon()"><h3>W</h3><p>23</p></button></div>
+             <div ><button class="drawn" id="leicesterdraw" onclick="showLeicesterDraw()"><h3>D</h3><p>12</p></button></div>
+             <div ><button class="lose" id="leicesterlost" onclick="showLeicesterLost()"><h3>L</h3><p>3</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>68</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>36</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">81</p></div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div class="first">
+         <img src="Photos/Arsenal%20FC_logo.png" id="arsenallogo" style="width:100px;height:100px;"><p class="teamnames arsenal">Arsenal</p>
+        <div class="stats">
+        <div class="arsenalbuttons">
+            <div><button class="played activate" id="arsenalplayed" onclick="showArsenalPlayed()"><h3>P</h3><p>38</p></button></div>
+            <div> <button class="wins" id="arsenalwon" onclick="showArsenalWon()"><h3>W</h3><p>20</p></button></div>
+            <div> <button class="drawn" id="arsenaldraw" onclick="showArsenalDraw()"><h3>D</h3><p>11</p></button></div>
+            <div><button class="lose" id="arsenallost" onclick="showArsenalLost()"><h3>L</h3><p>7</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>65</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>36</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">71</p></div>
+        </div>
+
+    </div>
+    </div> 
+    
+    <div class="seventeenth">
+        <img src="Photos/Tottenham%20FC_logo.png" id="tottenhamlogo"  style="width:80px;height:100px;"><p class="teamnames tottenham">Tottenham</p>
+        <div class="stats"> 
+        <div class="tottenhambuttons">
+             <div><button class="played activate" id="tottenhamplayed" onclick="showTottenhamPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="tottenhamwon" onclick="showTottenhamWon()"><h3>W</h3><p>19</p></button></div>
+             <div><button class="drawn" id="tottenhamdraw" onclick="showTottenhamDraw()"><h3>D</h3><p>13</p></button></div>
+             <div><button class="lose" id="tottenhamlost" onclick="showTottenhamLost()"><h3>L</h3><p>6</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">70</p></div>
+        </div>
+    </div>
+     </div>
+    
+    <div class="ninth">
+        <img src="Photos/Manchester%20City%20FC_logo.jpg" id="mancitylogo"  style="width:100px;height:100px;"><p class="teamnames manchestercity">Man City</p>
+         <div class="stats"><div class="mancitybuttons">
+             <div><button class="played activate" id="mancityplayed" onclick="showManCityPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="mancitywon" onclick="showManCityWon()"><h3>W</h3><p>19</p></button></div>
+             <div><button class="drawn" id="mancitydraw" onclick="showManCityDraw()"><h3>D</h3><p>9</p></button></div>
+             <div><button class="lose" id="mancitylost" onclick="showManCityLost()"><h3>L</h3><p>10</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>71</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>41</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">66</p></div>
+        </div>
+    </div>
+    </div> 
+ 
+     <div class="tenth">
+        <img src="Photos/Manchester%20United%20FC_logo.png" id="manunitedlogo"  style="width:100px;height:100px;"><p class="teamnames manchesterunited">Man United</p>
+         <div class="stats"><div class="manunitedbuttons">
+             <div><button class="played activate" id="manunitedplayed" onclick="showManUnitedPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="manunitedwon" onclick="showManUnitedWon()"><h3>W</h3><p>19</p></button></div>
+             <div><button class="drawn" id="manuniteddraw" onclick="showManUnitedDraw()"><h3>D</h3><p>9</p></button></div>
+             <div><button class="lose" id="manunitedlost" onclick="showManUnitedLost()"><h3>L</h3><p>10</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">66</p></div>
+        </div>
+    </div>
+   </div>  
+     <div class="thirteenth">
+        <img src="Photos/Southampton%20FC_logo.png" id="southamptonlogo"  style="width:100px;height:100px;"><p class="teamnames southampton">Southampton</p>
+         <div class="stats"><div class="southamptonbuttons">
+             <div><button class="played activate" id="southamptonplayed" onclick="showSouthamptonPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="southamptonwon" onclick="showSouthamptonWon()"><h3>W</h3><p>18</p></button></div>
+             <div><button class="drawn" id="southamptondraw" onclick="showSouthamptonDraw()"><h3>D</h3><p>9</p></button></div>
+             <div><button class="lose" id="southamptonlost" onclick="showSouthamptonLost()"><h3>L</h3><p>11</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">63</p></div>
+        </div>
+    </div>
+   </div>  
+     
+    <div class="twentieth">
+        <img src="Photos/WestHam%20FC_logo.png" id="westhamlogo"  style="width:100px;height:100px;"><p class="teamnames westham">West Ham</p>
+         <div class="stats"><div class="westhambuttons">
+             <div><button class="played activate" id="westhamplayed" onclick="showWestHamPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="westhamwon" onclick="showWestHamWon()"><h3>W</h3><p>16</p></button></div>
+             <div><button class="drawn" id="westhamdraw" onclick="showWestHamDraw()"><h3>D</h3><p>14</p></button></div>
+             <div><button class="lose" id="westhamlost" onclick="showWestHamLost()"><h3>L</h3><p>8</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">62</p></div>
+        </div>
+    </div>
+   </div>  
+      
+     <div class="eight">
+        <img src="Photos/Liverpool%20FC.png" id="liverpoollogo" style="width:90px;height:100px;"><p class="teamnames liverpool">Liverpool</p>
+         <div class="stats"><div class="liverpoolbuttons">
+             <div><button class="played activate" id="liverpoolplayed" onclick="showLiverpoolPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="liverpoolwon" onclick="showLiverpoolWon()"><h3>W</h3><p>16</p></button></div>
+             <div><button class="drawn" id="liverpooldraw" onclick="showLiverpoolDraw()"><h3>D</h3><p>12</p></button></div>
+             <div><button class="lose" id="liverpoollost" onclick="showLiverpoolLost()"><h3>L</h3><p>10</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>63</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>50</p></div>
+-->
+            <div class="points"><p>Points</p><p class="teampoint">60</p></div>
+        </div>
+    </div>
+ </div>         
+    
+      <div class="fourteenth">
+        <img src="Photos/Stoke%20City%20FC_logo.png" id="stokelogo"  style="width:100px;height:100px;"><p class="teamnames stoke">Stoke City</p>
+         <div class="stats"><div class="stokebuttons">
+             <div><button class="played activate" id="stokeplayed" onclick="showStokePlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="stokewon" onclick="showStokeWon()"><h3>W</h3><p>14</p></button></div>
+             <div><button class="drawn" id="stokedraw" onclick="showStokeDraw()"><h3>D</h3><p>9</p></button></div>
+             <div><button class="lose" id="stokelost" onclick="showStokeLost()"><h3>L</h3><p>15</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">51</p></div>
+        </div>
+    </div>
+ </div>          
+    
+    <div class="fourth">
+        <img src="Photos/Chelsea_FC%20logo.png" id="chelsealogo"  style="width:100px;height:100px;"><p class="teamnames chelsea">Chelsea</p>
+        <div class="stats"><div class="chelseabuttons">
+            <div><button class="played activate" id="chelseaplayed" onclick="showChelseaPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="chelseawon" onclick="showChelseaWon()"><h3>W</h3><p>12</p></button></div>
+            <div><button class="drawn" id="chelseadraw" onclick="showChelseaDraw()"><h3>D</h3><p>14</p></button></div>
+            <div><button class="lose" id="chelsealost" onclick="showChelseaLost()"><h3>L</h3><p>12</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>59</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>53</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">50</p></div>
+        </div>
+    </div>
+    </div>
+    
+     <div class="sixth">
+        <img src="Photos/Everton%20FC_logo.jpg" id="evertonlogo"  style="width:100px;height:100px;"><p class="teamnames everton">Everton</p>
+         <div class="stats"><div class="evertonbuttons">
+             <div><button class="played activate" id="evertonplayed" onclick="showEvertonPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="evertonwon" onclick="showEvertonWon()"><h3>W</h3><p>11</p></button></div>
+             <div><button class="drawn" id="evertondraw" onclick="showEvertonDraw()"><h3>D</h3><p>14</p></button></div>
+             <div ><button class="lose" id="evertonlost" onclick="showEvertonLost()"><h3>L</h3><p>12</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>59</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>55</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">47</p></div>
+        </div>
+    </div>
+     </div>
+         
+    <div class="sixteenth">
+        <img src="Photos/Swansea_FC_logo.gif" id="swansealogo"  style="width:100px;height:100px;"><p class="teamnames swansea">Swansea</p>
+        <div class="stats"> <div class="swanseabuttons">
+             <div><button class="played activate" id="swanseaplayed" onclick="showSwanseaPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="swanseawon" onclick="showSwanseaWon()"><h3>W</h3><p>11</p></button></div>
+             <div><button class="drawn" id="swanseadraw" onclick="showSwanseaDraw()"><h3>D</h3><p>13</p></button></div>
+             <div><button class="lose" id="swansealost" onclick="showSwanseaLost()"><h3>L</h3><p>14</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">47</p></div>
+        </div>
+    </div>
+    </div> 
+    
+    
+    <div class="eighteenth">
+        <img src="Photos/Watford%20FC_logo.png" id="watfordlogo"  style="width:100px;height:100px;"><p class="teamnames watford">Watford</p>
+         <div class="stats"><div class="watfordbuttons">
+             <div><button class="played activate" id="watfordplayed" onclick="showWatfordPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="watfordwon" onclick="showWatfordWon()"><h3>W</h3><p>12</p></button></div>
+             <div><button class="drawn" id="watforddraw" onclick="showWatfordDraw()"><h3>D</h3><p>9</p></button></div>
+             <div><button class="lose" id="watfordlost" onclick="showWatfordLost()"><h3>L</h3><p>17</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">45</p></div>
+        </div>
+    </div> 
+   </div>  
+    
+    
+     <div class="nineteenth">
+        <img src="Photos/West_Bromwich_Albion%20FC_logo.png" id="westbromlogo"  style="width:90px;height:100px;"><p class="teamnames westbrom">West Brom</p>
+        <div class="stats"> <div class="wbabuttons">
+             <div><button class="played activate" id="westbromplayed" onclick="showWestBromPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="westbromwon" onclick="showWestBromWon()"><h3>W</h3><p>10</p></button></div>
+             <div><button class="drawn" id="westbromdraw" onclick="showWestBromDraw()"><h3>D</h3><p>13</p></button></div>
+             <div><button class="lose" id="westbromlost" onclick="showWestBromLost()"><h3>L</h3><p>15</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">43</p></div>
+        </div>
+    </div>
+     </div>
+       
+    <div class="fifth">
+        <img src="Photos/Crystal_Palace_FC_logo.png" id="crystallogo" style="width:100px;height:100px;"><p class="teamnames crystalpalace">Crystal Palace</p>
+        <div class="stats"><div class="cpbuttons">
+            <div><button class="played activate" id="crystalpalaceplayed" onclick="showCrystalPalacePlayed()"><h3>P</h3><p>38</p></button></div>
+            <div><button class="wins" id="crystalpalacewon" onclick="showCrystalPalaceWon()"><h3>W</h3><p>11</p></button></div>
+            <div><button class="drawn" id="crystalpalacedraw" onclick="showCrystalPalaceDraw()"><h3>D</h3><p>9</p></button></div>
+            <div><button class="lose" id="crystalpalacelost" onclick="showCrystalPalaceLost()"><h3>L</h3><p>18</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>39</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>51</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">42</p></div>
+        </div>
+    </div>
+   </div>
+    
+     <div class="third">
+        <img src="Photos/Bournemouth%20FC_logo.png" id="bournemouthlogo" style="width:90px;height:100px;"><p class="teamnames bournemouth">Bournemouth</p>
+        <div class="stats"><div class="boubuttons">
+            <div><button class="played activate" id="bournemouthplayed" onclick="showBournemouthPlayed()"><h3>P</h3><p>38</p></button></div>
+            <div> <button class="wins" id="bournemouthwon" onclick="showBournemouthWon()"><h3>W</h3><p>11</p></button></div>
+            <div> <button class="drawn" id="bournemouthdraw" onclick="showBournemouthDraw()"><h3>D</h3><p>9</p></button></div>
+            <div> <button class="lose" id="bournemouthlost" onclick="showBournemouthLost()"><h3>L</h3><p>18</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>45</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>67</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">42</p></div>
+        </div>
+    </div>
+     </div>
+    
+      <div class="fifteenth">
+        <img src="Photos/Sunderland%20FC_logo.png" id="sunderlandlogo"  style="width:100px;height:100px;"><p class="teamnames sunderland">Sunderland</p>
+         <div class="stats"><div class="sunbuttons">
+             <div><button class="played activate" id="sunderlandplayed" onclick="showSunderlandPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="sunderlandwon" onclick="showSunderlandWon()"><h3>W</h3><p>9</p></button></div>
+             <div><button class="drawn" id="sunderlanddraw" onclick="showSunderlandDraw()"><h3>D</h3><p>12</p></button></div>
+             <div><button class="lose" id="sunderlandlost" onclick="showSunderlandLost()"><h3>L</h3><p>17</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">39</p></div>
+        </div>
+    </div>
+     </div>
+    
+ 
+    
+    <div class="eleventh">
+        <img src="Photos/Newcastle_United_FC_Logo.png" id="newcastlelogo"  style="width:100px;height:100px;"><p class="teamnames newcastle">Newcastle</p>
+         <div class="stats"><div class="newcastlebuttons">
+             <div><button class="played activate" id="newcastleplayed" onclick="showNewcastleUnitedPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="newcastlewon" onclick="showNewcastleUnitedWon()"><h3>W</h3><p>9</p></button></div>
+             <div><button class="drawn" id="newcastledraw" onclick="showNewcastleUnitedDraw()"><h3>D</h3><p>10</p></button></div>
+             <div><button class="lose" id="newcastlelost" onclick="showNewcastleUnitedLost()"><h3>L</h3><p>19</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+              <div class="points"><p>Points</p><p class="teampoint">37</p></div>
+        </div>
+    </div>
+     </div>    
+    
+    <div class="twelfth">
+        <img src="Photos/Norwich_FC_logo.png" id="norwichlogo"  style="width:100px;height:100px;"><p class="teamnames norwich">Norwich</p>
+         <div class="stats">
+             <div class="norwichbuttons">
+             <div><button class="played activate" id="norwichplayed" onclick="showNorwichPlayed()"><h3>P</h3><p>38</p></button></div>
+             <div><button class="wins" id="norwichwon" onclick="showNorwichWon()"><h3>W</h3><p>9</p></button></div>
+             <div><button class="drawn" id="norwichdraw" onclick="showNorwichDraw()"><h3>D</h3><p>7</p></button></div>
+             <div><button class="lose" id="norwichlost" onclick="showNorwichLost()"><h3>L</h3><p>22</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>49</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>35</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">34</p></div>
+        </div>
+    </div>
+     </div>    
+    
+    <div class="second">
+        <img src="Photos/Aston_Villa%20FC%20_logo.png" id="astonvillalogo" style="width:100px;height:100px;"><p class="teamnames astonvilla">Aston Villa</p>
+        <div class="stats"><div class="astonvillabuttons">
+            <div><button class="played activate" id="astonvillaplayed" onclick="showAstonVillaPlayed()"><h3>P</h3><p>38</p></button></div>
+            <div><button class="wins" id="astonvillawon" onclick="showAstonVillaWon()"><h3>W</h3><p>3</p></button></div>
+            <div> <button class="drawn" id="astonvilladraw" onclick="showAstonVillaDraw()"><h3>D</h3><p>8</p></button></div>
+            <div><button class="lose" id="astonvillalost" onclick="showAstonVillaLost()"><h3>L</h3><p>27</p></button></div>
+<!--
+             <div class="goalsfor"><h3>GF</h3><p>27</p></div>
+             <div class="goalsagainst"><h3>GA</h3><p>76</p></div>
+-->
+             <div class="points"><p>Points</p><p class="teampoint">17</p></div>
+        </div>
+            
+        </div>
+    </div>
+    
+<footer>
+  <p class="footer-info">Copyright © 2016 Neeraj Talukdar</p>
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+<script type="text/javascript" src="epl_2015-16.js"></script>
+</body>
+</html>    

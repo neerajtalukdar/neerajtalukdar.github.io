@@ -1,0 +1,283 @@
+
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+}
+
+.heading{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: #419cb0;
+}
+
+.legend{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    text-align: right;
+    color: #419cb0;
+}
+
+.teampoint{
+    color: #419cb0;
+    font-size: 35px;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+div.tooltip {   
+	  position: absolute; 
+    ` width: 100px;                  
+	  height: 30px;                 
+	  padding: 5px; 
+	  color: white;          
+	  font-size: 12px;     
+	  background: #419cb0;
+	  text-align: center;
+	  vertical-align: middle; 
+    ` border: 2px;  
+	  border-radius: 6px;  
+	  pointer-events: none; 
+	  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	                  
+	} 
+
+  
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eight, .ninth, .tenth, .eleventh, .twelfth, .thirteenth, .fourteenth, .fifteenth, .sixteenth, .seventeenth, .eighteenth, .nineteenth, .twentieth{
+    position: relative;
+}   
+
+#arsenallogo, #astonvillalogo, #bournemouthlogo, #crystallogo, #chelsealogo, #evertonlogo, #leicesterlogo, #liverpoollogo, #mancitylogo, #manunitedlogo, #newcastlelogo, #norwichlogo, #southamptonlogo, #stokelogo, #sunderlandlogo, #swansealogo, #tottenhamlogo, #watfordlogo, #westbromlogo, #westhamlogo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+} 
+
+
+
+.stats{
+   position: absolute;
+   top: 30px;
+   left: 850px;
+   width: 600px;
+   height: 100px;    
+}    
+
+.played{
+    border:lightgray 3px solid;
+    border-radius:8px;
+    background-color: #f0f0f0;
+    float: left;
+    width:100px;
+    height:100px;
+}
+
+
+
+.wins{
+    
+    border:lightgray 3px solid;
+    border-radius:8px;
+    background-color: #f0f0f0;
+    float: left;
+    width:100px;
+    height:100px;
+} 
+
+.drawn{
+    border:lightgray 3px solid;
+    border-radius:8px;
+    background-color: #f0f0f0;
+    float: left;
+    width:100px;
+    height:100px;
+} 
+
+.lose{
+    border:lightgray 3px solid;
+    border-radius:8px;
+    background-color: #f0f0f0;
+    float: left;
+    width:100px;
+    height:100px;
+} 
+
+.activate{
+    border:#66CD00 5px solid;
+    border-radius:8px;
+    background-color: white;
+    color: #66CD00;
+}
+
+.goalsfor{
+    float: left;
+    width:100px;
+    height:100px;
+} 
+
+.goalsagainst{
+    float: left;
+    width:100px;
+    height:100px;
+} 
+
+
+.points{
+    float: left;
+    margin-left: 65px;
+    width:100px;
+    height:100px;
+}     
+
+.teamnames{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+  
+    
+.arsenal {
+  fill: #fb0000;
+color:  #fb0000;
+   
+}
+
+.astonvilla{
+      fill: #79133e;
+    color: #79133e;
+}  
+
+.bournemouth{
+
+    fill: #ff4d4d;
+    color:#ff4d4d;
+}    
+    
+.chelsea{
+    fill:#184891;
+    color:#184891;
+    }
+    
+.crystalpalace{
+    fill: #1b468e;
+    color: #1b468e;
+    }
+    
+.everton {
+  fill: #02509c;
+   color: #02509c;
+}
+
+.leicester{
+      fill: #00007f;
+    color: #00007f;
+}  
+
+.liverpool{
+
+    fill: #d12029;
+    color:#d12029;
+}    
+    
+.manchestercity{
+    fill: #00BFFF;
+    color: #00BFFF;
+}
+    
+.manchesterunited{
+    fill: #d91f26;
+    color:#d91f26;
+}    
+    
+.newcastle{
+   fill: #26b4e9;
+    color: #26b4e9;
+}
+
+.norwich{
+    fill: #00a54c;
+    color: #00a54c;
+}
+
+.southampton{
+    fill: #fd5555;
+    color: #fd5555;
+}
+  
+.stoke{
+    fill: #f06046;
+    color:  #f06046;
+}
+
+.sunderland{
+    fill: #f95f2c;
+    color: #f95f2c;
+}
+
+.swansea{
+    fill: #25b1db;
+    color: #25b1db;
+}
+
+.tottenham{
+     fill:#7f7fff;
+    color: #7f7fff;
+}
+
+.watford{
+    fill:#ffed14;
+    color: #ffed14;
+}
+    
+.westbrom{
+    fill: #000080;
+    color: #000080;
+}
+
+.westham{
+    fill: #800000;
+    color: #800000;
+}
+
+
+
+.awayteam {
+  
+    fill: #696969;
+}    
+
+.won{
+        
+    opacity:1.0;
+}    
+    
+.lost{
+        opacity: 0.25;
+}
+    
+.draw{
+        opacity: 0.55;
+}
+
+.points{
+  position: absolute;
+  top: 8px;
+  left: 400px;
+}
+    
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+.footer-info{
+
+    padding-right: 8px;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+}
