@@ -1579,6 +1579,19 @@ Works item
 }
 
 
+.keypoint{
+    border-style:solid;
+    border-width:8px;  
+    border-color:#B1E2FF #B1E2FF #B1E2FF #B1E2FF;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #D8F1FF;
+
+   
+
+}
+
+
 .header{
    font-family: "Dosis", sans-serif;
 	text-transform: uppercase;
