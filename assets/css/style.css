@@ -1060,7 +1060,7 @@ Overlays
 }
 
 .bg-dark-60:before {
-	background: rgba(34, 34, 34, 0.6);
+	background: rgba(34, 34, 34, 0.7);
 	content: "";
 	left: 0;
 	top: 0;
