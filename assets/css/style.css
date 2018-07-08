@@ -1571,9 +1571,10 @@ Works item
 .quotes{
     border-style:solid;
     border-width:8px;  
-    border-color:white white white blue;
+    border-color:white white white #B1E2FF;
     padding-left: 10px;
-    font-size: 24px;
+    font-size: 20px;
+    font-style: italic;
 
 }
 
@@ -1583,6 +1584,7 @@ Works item
 	text-transform: uppercase;
 	letter-spacing: 3px;
     font-size: 24px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -2411,22 +2413,3 @@ Multi-columns-row
 	float: right;
 }
 
-/* unvisited link */
-a:link {
-    color: red;
-}
-
-/* visited link */
-a:visited {
-    color: green;
-}
-
-/* mouse over link */
-a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}
