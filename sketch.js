@@ -20,7 +20,7 @@ function setup() {
   noCanvas();
 
   // Create the LSTM Generator passing it the model directory
-  charRNN = ml5.charRNN('models/woolf/', modelReady);
+  charRNN = ml5.charRNN('models/jkrowling_HP/', modelReady);
 
   // Grab the DOM elements
   textInput = select('#textInput');
