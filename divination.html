@@ -25,20 +25,45 @@
     background-color: #CCC;
     padding: 4px 0px 4px 0px
   }
+      
+body {margin:60;
+    padding:60}      
 
   </style>
+    
+    
+<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Plugins -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/linea-icons.css" rel="stylesheet">
+	<link href="assets/css/ionicons.min.css" rel="stylesheet">
+	<link href="assets/css/simpletextrotator.css" rel="stylesheet">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+	<link href="assets/css/superslides.css" rel="stylesheet">
+	<link href="assets/css/vertical.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/divination.css" rel="stylesheet">
+
+	<!-- Template core CSS -->
+	<link href="assets/css/style.css" rel="stylesheet">    
 </head>
 
 <script src="sketch.js"></script>
 
 <body>
-    <h1>Interactive LSTM Text Generation Example using p5.js</h1>
-    <h2>This example uses a pre-trained model on a corpus of <a href="https://en.wikipedia.org/wiki/Harry_Potter">Harry Potter</a></h2>
-  <textarea id="textInput" style="width: 300px; height: 50px;" placeholder="type here"></textarea>
+    <h1 align="center">Interactive LSTM Text Generation Example using p5.js</h1>
+    <h3 align="center">This example uses a pre-trained model on a corpus of <a href="https://en.wikipedia.org/wiki/Harry_Potter">Harry Potter</a></h3>
+  <textarea align = "center" id="textInput" style="width: 300px; height: 50px;" placeholder="type here"></textarea>
   <br/> length:
+<div class="range-slider">
+ 
   <input id="lenSlider" type="range" min="1" max="100" value="20"> <span id="length">20</span>
   <br/> temperature:
-  <input id="tempSlider" type="range" min="0" max="1" step="0.01"><span id="temperature">0.5</span>
+  <input  id="tempSlider" type="range" min="0" max="1" step="0.01"><span id="temperature">0.5</span>
+</div>    
   <p id="status">Loading Model</p>
   <p id="result">
     <span id="original"></span><span id="prediction"></span>
@@ -51,11 +76,10 @@
 						<p class="copyright text-center m-b-0">
                         <p>Sources</p>   
                         <li><a href="https://github.com/sherjilozair/char-rnn-tensorflow">Sherjil Ozair</a></li>
-				        <li><a href="https://ml5js.org/">ML5.js</a></li></p>
+				        <li><a href="https://ml5js.org/">ML5.js</a></li>
 
 					</div>
-
-				</div>
+     </div>
 </body>
     
 
