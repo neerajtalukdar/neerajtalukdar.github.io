@@ -126,5 +126,21 @@ $range-label-width: 60px !default;
 
 input::-moz-focus-inner,
 input::-moz-focus-outer { 
-  border: 0; 
+  border: 10; 
+}
+
+.footer {
+   
+  position: fixed;
+  left: 0;
+    font-size: 10px;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white !important;
+  text-align: center;
+}
+
+.inputbox{
+     margin: 0 auto;
 }
