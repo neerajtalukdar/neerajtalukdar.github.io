@@ -25,7 +25,7 @@
   }
 
   #prediction {
-    background-color: #F3F315;
+    background-color: #ffe359;
     padding: 4px 0px 4px 0px;
     font-size: 30px;
     font-style: bold;
@@ -85,16 +85,17 @@
     <h3 align="center">This example uses a pre-trained model on the corpus of <a href="https://en.wikipedia.org/wiki/Harry_Potter">Harry Potter</a> books</h3>
     <br/><br/>
     
+    <p>Use the sliders to adjust the <span class="highlight"><b>length</b></span> and <span class="highlight"><b>accuracy</b></span> of the prediction. Length determines the number of characters in the resulting predicted text. The longer the length, more time is required for computation. The accuracy slider affects the randomness of the output, 0 being highly random where result might not vene be proper English , while accuracy of 1 will be highly representative of text from the books.</p>
 
 <div class="inputbox">    
   <textarea align = "center" id="textInput" style="width: 600px; height: 50px;" placeholder="type and we will use magic to predict the next set of words"></textarea>
     </div>   
             
-  <br/> length:
+    <br/> <span class="highlight"><b>Length:</b></span>
 <div class="range-slider">
- 
+    
   <input id="lenSlider" type="range" min="1" max="100" value="20"> <span id="length">20</span>
-  <br/> temperature:
+    <br/><br/>  <span class="highlight"><b>Accuracy:</b></span>
   <input  id="tempSlider" type="range" min="0" max="1" step="0.01"><span id="temperature">0.5</span>
 </div>    
   <p id="status">Loading Model</p>

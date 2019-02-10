@@ -142,5 +142,5 @@ input::-moz-focus-outer {
 }
 
 .inputbox{
-     margin: 0 auto;
+    align-self: center;
 }
