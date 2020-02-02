@@ -1386,13 +1386,13 @@ Hero
 }
 
 .mh-line-size-3 {
-	letter-spacing: 24px;
+	letter-spacing: 12px;
 	font-size: 26px;
 	opacity: 0.8;
 }
 
 .mh-line-size-4 {
-	letter-spacing: 10px;
+	letter-spacing: 8px;
 	font-size: 16px;
 	opacity: 0.6;
 }
