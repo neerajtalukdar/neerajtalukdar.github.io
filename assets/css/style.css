@@ -669,6 +669,10 @@ Pagination
 Social links
 ------------------------------------------------------------------- */
 
+.project-link{
+    color: #ffa500
+}
+
 .social-text-links,
 .social-icon-links {
 	list-style: none;
