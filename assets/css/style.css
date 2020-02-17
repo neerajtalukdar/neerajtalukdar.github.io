@@ -1622,6 +1622,30 @@ Works item
     padding-bottom: 10px;
 }
 
+
+.headercardcollapse{
+    font-family: "Open Sans";
+	
+	letter-spacing: 3px;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+   
+}
+
+.modules{
+  margin-bottom: 20px;  
+    border-radius: 6px;    
+}
+
+.card-image{
+    height: 100px;
+    
+}
+}
+
+
 .project-images{
     padding-top: 10px;
     padding-bottom: 10px;
