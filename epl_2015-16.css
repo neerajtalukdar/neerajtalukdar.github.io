@@ -34,9 +34,10 @@ div.tooltip {
     ` width: 100px;                  
 	  height: 30px;                 
 	  padding: 5px; 
-	  color: white;          
+	  color: white;
+      font-family: 'Source Sans Pro', sans-serif;
 	  font-size: 12px;     
-	  background: #419cb0;
+	  background: #16161d;
 	  text-align: center;
 	  vertical-align: middle; 
     ` border: 2px;  
