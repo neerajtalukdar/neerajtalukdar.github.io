@@ -6,24 +6,27 @@ body{
 }
 
 .heading{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    background-color: #419cb0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-family: 'DM Serif Display';
+    text-align: center;
+ 
+   
 }
 
 .legend{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
     text-align: right;
-    color: #419cb0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .teampoint{
-    color: #419cb0;
-    font-size: 35px;
-    font-family: "Arial Black", Gadget, sans-serif;
+   
+    font-size: 50px;
+    font-family: 'DM Serif Display';
 }
 
 div.tooltip {   
@@ -71,6 +74,8 @@ div.tooltip {
     float: left;
     width:100px;
     height:100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 }
 
 
@@ -83,6 +88,8 @@ div.tooltip {
     float: left;
     width:100px;
     height:100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 } 
 
 .drawn{
@@ -92,6 +99,8 @@ div.tooltip {
     float: left;
     width:100px;
     height:100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 } 
 
 .lose{
@@ -101,6 +110,8 @@ div.tooltip {
     float: left;
     width:100px;
     height:100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 } 
 
 .activate{
@@ -108,6 +119,8 @@ div.tooltip {
     border-radius:8px;
     background-color: white;
     color: #66CD00;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 }
 
 .goalsfor{
@@ -128,18 +141,37 @@ div.tooltip {
     margin-left: 65px;
     width:100px;
     height:100px;
-}     
+}  
+
+
+.teaminfo{
+    margin-left: 40px;
+    margin-bottom: 80px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    
+    
+}
 
 .teamnames{
-    margin-top: 10px;
-    margin-left: 50px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    
 }
-  
+
+
+.teamlogo {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
     
 .arsenal {
   fill: #fb0000;
-color:  #fb0000;
+  color:  #fb0000;
    
 }
 
@@ -278,6 +310,6 @@ color:  #fb0000;
 
     padding-right: 8px;
     text-align: center;
-    background-color: lightgrey;
-    color: white;
+   
+   
 }
