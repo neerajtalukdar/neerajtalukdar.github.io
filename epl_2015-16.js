@@ -1,4 +1,4 @@
-var topMargin=20, leftMargin=150, rightMargin= -400, bottomMargin=20;  
+var topMargin=40, leftMargin=100, rightMargin= -400, bottomMargin=20;  
 var xRadius=5, yRadius=5; //corner radiu of rectangular bars
     
 var toggleTime=1000;    //time for transition between the diffeent states
