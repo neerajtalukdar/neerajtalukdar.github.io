@@ -1647,6 +1647,15 @@ Works item
 }
 
 
+.quotes-new{
+    font-family: 'Playfair Display';
+    padding-left: 10px;
+    font-size: 24px;
+    font-style: italic;
+
+}
+
+
 .keypoint{
     border-style:solid;
     border-width:8px;  
@@ -1668,14 +1677,21 @@ Works item
 
 
 .header{
-    font-family: 'Montserrat';
-	text-transform: uppercase;
-	letter-spacing: 3px;
-    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-size: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: black;
 }
 
+
+.description-text{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #333333
+}
 
 .headercardcollapse{
     font-family: "Open Sans";
