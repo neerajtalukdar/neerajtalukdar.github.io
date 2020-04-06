@@ -724,6 +724,10 @@ Social links
 Content box
 ------------------------------------------------------------------- */
 
+.maincontent{
+    padding-top: 60px;
+}
+
 .content-box {
 	margin: 25px 0;
 }
