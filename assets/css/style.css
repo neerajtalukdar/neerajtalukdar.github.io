@@ -9,6 +9,7 @@ Version: 1.0.4
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
+
 /* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------ */
@@ -1686,6 +1687,19 @@ Works item
     padding-top: 10px;
     padding-bottom: 10px;
     color: black;
+}
+
+.sub-header{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.callout{
+    background-color: aquamarine
 }
 
 
