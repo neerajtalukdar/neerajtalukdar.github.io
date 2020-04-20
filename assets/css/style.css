@@ -19,12 +19,7 @@ nda{
     font-weight: bold;
 }
 
-sub-text{
 
-    font-family: 'Open Sans';
-    font-size: 12px;
-    color: hotpink;   
-}
 
 body {
 	background: #fff;
@@ -34,10 +29,19 @@ body {
 	-ms-overflow-style: scrollbar;
 }
 
+sub-text{
+
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #333333;   
+}
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
+
 
 iframe {
 	border: 0;
@@ -370,6 +374,36 @@ Buttons
 /* ------------------------------------------------------------------
 Card layout
 ------------------------------------------------------------------- */
+.intro-section{
+    padding: 4px;
+}
+
+.intro-card{
+    width: 30%;
+    float: left;
+    padding-top: 8px;
+    padding-left: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    margin-right: 3%;
+    
+}
+
+.intro-header{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;  
+}
+
+.intro-explanation{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-right: 20px;
+    color: black;  
+}
+
+
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
