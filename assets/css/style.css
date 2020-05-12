@@ -13,7 +13,7 @@ Version: 1.0.4
 /* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------ */
-nda{
+.nda{
     
     font-family: "Open Sans";
     font-weight: bold;
@@ -46,6 +46,24 @@ img {
 iframe {
 	border: 0;
 }
+
+
+.top-section{
+    height: 300px;
+}
+
+.top-section-header{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    color: black;
+}
+
+.top-section-description{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: black;
+}
+
 
 /* ------------------------------------------------------------------
 Selection
