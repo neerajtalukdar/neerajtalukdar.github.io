@@ -179,7 +179,7 @@
                         <p class="intro-explanation">
                             Project Members: Ryan Bloom (PM), Tony Deng (Architect) <br><br>
                             Time: 2 months <br><br>
-                            Theme: Web Application, AI based service <br><br>
+                            Theme: Web Application, Recommender Systems <br><br>
                              
                             </p>
                     
@@ -230,122 +230,120 @@
                         <div class="header"> What propelled this effort in the first place? </div>
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/GoogleGA.png" alt="Research" >
                         <div>
-                            <p class="animated fadeInRight description-text">Google, recently announced a suite of features in the realm of Contact Center and one of the main features was Agent Assist. Live agents are empowered with continuous support during their calls, as Agent Assist transcribes calls in real time, identifies customer intent, provides real-time, step by step assistance (recommended articles, workflows, etc.), and automates call dispositions.</p>
+                            <p class="animated fadeInRight description-text">Google, recently announced a suite of features in the realm of Contact Center and one of the main features was Agent Assist. Live agents are empowered with continuous support during their calls, as Agent Assist transcribes calls in real time, identifies customer intent, provides real-time, step by step assistance (recommended articles, workflows, etc.), and automates call dispositions. Cisco decided to partner with Google to bring this feature to our customers. </p>
                         </div>
                             
                         
-                        <div class="header"> A Brief Summary of the Agent Assist API </div>
-                        <img class="project-images" src="assets/images/portfolio/AgentAssist/SystemDiagram.png" alt="Research" >
-                        <div>
-                            <p class="animated fadeInRight description-text">The Agent Assist API was still in it's nascent stages. At the core, it was providing links to articles. </p>
-                        </div>
-                        
+                    
                         
                         <div class="header"> Envisioning the possibilities: The extended ecosystem</div>
-                        <img class="project-images" src="assets/images/portfolio/AgentAssist/SystemDiagram.png" alt="Research" >
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/SystemDiagram.png" alt="System Diagram" >
                         <div>
-                            <p class="animated fadeInRight description-text">The Agent Assist API was still in it's nascent stages. At the core, it was providing links to articles. </p>
+                            <p class="animated fadeInRight description-text">The Agent Assist API was still in it's nascent stages. At the core, it was providing links to articles. However, the end goal was to provide a way of extracting and summarizing relevant snippets from the article and tailor in such a way that it could be used directly in chat messages or spoken out aloud by agents during a call. Thus, we decided to map out the overall ecosystem and understand the realm of possibilities of having the ability for an AI system understand the conversation of the call or chat conversationa and provide suggestions to agents. In essence, we identified the following touchpoints: <br><br>
+1. Customers could themeselves be suggested links to articles in a chat conversations.  <br>
+2. Agents could be supported by links to documents and web-pages and also provided direct responses for usage.<br>
+                            3. An efficient way to upload and manage documents for the admin.<br>
+                            4. Supervisors to keep track of topics which would help in priortizing teams, queues and training.</p>
                         </div>
+                        
+                        
+                         <div class="header"> Focusing on the MVO: The Agent Experience </div>
+                        <div>
+                            <p class="animated fadeInRight description-text">We focused on the agent experience piece for the MVO deliverable and expanded on the realm of possibilities within it. We broke down agent touch-point possibilities into the 3 major categories : Before Call/Idle State, During Call and Post Call </p>
+                        </div>
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/idea-map.png" alt="Idea Map" >
+                        
+                        
                         
                         
                         <div class="header"> The Guiding Design Principles </div>
                        
                         <div>
-                            <p class="animated fadeInRight description-text">We set out by defining a set of guiding principles for the design. This was done in collaboration with the Product Manager and Architect. We looked at some existing literature out there on User Experience principles when it comes to building AI based services. The most noteworthy one was the The <a href="https://pair.withgoogle.com/guidebook/">People + AI Guidebook </a> developed by one of the teams in Google. Here is the set of guidelines we decided to follow in the design explorations. </p>
+                            <p class="animated fadeInRight description-text">We set out by defining a set of principles that we should account for in the design. This was done in collaboration with the Product Manager and Architect. We looked at some existing literature out there on User Experience principles when it comes to building AI based services. The most noteworthy one was the Google's <a href="https://pair.withgoogle.com/guidebook/">People + AI Guidebook </a>. Here is the set of guidelines we decided to follow in the design explorations. </p>
                             
                             <div class="row intro-section">
               
-                    <div class="body-card col-md-4">
-                        <p class="intro-header">Transparency</p>
-                        <p class="intro-explanation">
-                            We should have a way of surfacing transparency to the agent about some of the inner-workings of the system.
-                        </p>
+                                <div class="body-card col-md-4">
+                                    <p class="intro-header">Transparency</p>
+                                    <p class="intro-explanation">
+                                        We should have a way of surfacing transparency to the agent about some of the inner-workings of the system.
+                                    </p>
+
+                                </div>
                     
-                    </div>
-                    
-                    <div class="body-card col-md-4">
-                        <p class="intro-header">Feedback Mechanism</p>
-                        <p class="intro-explanation">
-                            There should be a way to gather feedback from agents on the suggestions being provided.
-                        </p>
-                    
-                    </div>
-                    
-                    
-                    <div class="body-card col-md-4">
-                        <p class="intro-header">Non-intrusive</p>
-                        <p class="intro-explanation">
-                            It is critical to provide suggestions in a non-intrusive manner to avoid unnecessary distractions.
-                        </p>
-                    
-                    </div>
-                                
-                                
-                    <div class="body-card col-md-4">
-                        <p class="intro-header">Agent in Control</p>
-                        <p class="intro-explanation">
-                            Agents should feel in complete control of the system at all times. Objective is to augment agents, not replace.
+                                <div class="body-card col-md-4">
+                                    <p class="intro-header">Feedback Mechanism</p>
+                                    <p class="intro-explanation">
+                                        There should be a way to gather feedback from agents on the suggestions being provided.
+                                    </p>
+
+                                </div>
+                                   
+                                <div class="body-card col-md-4">
+                                    <p class="intro-header">Non-intrusive</p>
+                                    <p class="intro-explanation">
+                                        It is critical to provide suggestions in a non-intrusive manner to avoid unnecessary distractions.
+                                    </p>
+
+                                </div>                       
                              
-                        </p>
-                    
-                    </div>
-                    
-                    <div class="body-card col-md-4">
-                        <p class="intro-header">Seamless Error Handling</p>
-                        <p class="intro-explanation">
-                            Errors are common to AI systems, there should be a graceful way to tackle any kind of issue or error.
-                        </p>
-                    
-                    </div>
-                    
-                    
-                    <div class="body-card col-md-4">
-                        <p class="intro-header">Set Expectations</p>
-                        <p class="intro-explanation">
-                            It would be important to level set the expectations to avoid disappointment in the service.
-                        </p>
-                    
-                    </div>            
-                    
-               
-                
-                </div>
-                            
-                            
-                            
-                        </div>
-                        
-                        
-                        
-                    <div class="row">
-              
-                        <div class="col-sm-6">
-                                <img class="project-images" src="assets/images/portfolio/AgentAssist/SystemDiagram.png" alt="Onboarding">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="sub-header"> Onboarding </div>
-                            <div> <p class="description-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec eleifend libero. Nulla id lacinia felis. Sed diam nisl, accumsan quis erat in, egestas gravida nulla. Morbi fermentum pretium aliquet. Fusce ut consectetur nisi. Maecenas vehicula tellus metus, quis imperdiet augue eleifend id. Pellentesque hendrerit pharetra tincidunt. Donec porta tincidunt nunc, ut convallis neque aliquet ac.</p> </div>
-                    
-                        </div>
-               
-                    </div>              
-        <br/> <br/><br/><br/><br/><br/>            
-                
-                    <div class="row">
+                                <div class="body-card col-md-4">
+                                    <p class="intro-header">Agent in Control</p>
+                                    <p class="intro-explanation">
+                                        Agents should feel in complete control of the system at all times. Objective is to augment agents, not replace.
 
-                            <div class="col-sm-6">
-                                <img class="project-images" src="assets/images/portfolio/AgentAssist/SystemDiagram.png" alt="Onboarding">
+                                    </p>
+
+                                </div>
+                    
+                                <div class="body-card col-md-4">
+                                    <p class="intro-header">Seamless Error Handling</p>
+                                    <p class="intro-explanation">
+                                        Errors are common to AI systems, there should be a graceful way to tackle any kind of issue or error.
+                                    </p>
+
+                                </div>
+                    
+                                <div class="body-card col-md-4">
+                                    <p class="intro-header">Set Expectations</p>
+                                    <p class="intro-explanation">
+                                        It would be important to level set the expectations to avoid disappointment in the service.
+                                    </p>
+
+                                </div>            
+                    
                             </div>
-                            <div class="col-sm-6">
-                                 <div class="sub-header"> Landing Page </div>
-                                <div> <p class="description-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec eleifend libero. Nulla id lacinia felis. Sed diam nisl, accumsan quis erat in, egestas gravida nulla. Morbi fermentum pretium aliquet. Fusce ut consectetur nisi. Maecenas vehicula tellus metus, quis imperdiet augue eleifend id. Pellentesque hendrerit pharetra tincidunt. Donec porta tincidunt nunc, ut convallis neque aliquet ac.</p> </div>
-
-                            </div>
-
-                    </div> 
-        <br/> <br/><br/><br/><br/><br/>  
-                
-                            
+                           
+                        </div>
+                        
+                    <br><br><br><br>   
+                    <div class="header"> Defining the Interactions</div>
+                     
+                        <div>
+                            <p class="animated fadeInRight description-text"> We first focused on defining where the suggestions should appear in the desktop layout. After a few iterations, we agreed upon having a section for the article suggestions in the auxiliary pane. </p>
+                        </div>  
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/Layout.png" alt="Layout" >
+                        <div>
+                            <p class="animated fadeInRight description-text">After defining the positioning of the suggestions, we focused on defining the nuanced details around these suggestions. Design decisions were taken based on the guiding principles that have been enlisted above as well and also taking into consideration the possibility of bringing in some of the ideas captured in the idea map above. </p>
+                        </div> 
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-1.png" alt="Iteration" >
+                        
+                    <br><br><br><br>    
+                     <div class="header"> Itearting based on Feedback</div>
+                     
+                        <div>
+                            <p class="animated fadeInRight description-text"> We developed an initial version for early field trials with a couple of customers who were excited to test it out . Based on the feedback we incorporated a few changes before going GA. </p>
+                        </div>  
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Feedback" >    
+                      
+                    <br><br><br><br>     
+                    <div class="header"> Results from this project </div>
+                     
+                        <div>
+                            <p class="animated fadeInRight description-text"> The announcement of Ga of this feature was met with alot of excitement in the field. </p>
+                        </div>  
+                       
+                  
                        
                         
 <!--                        <div class="header"> Quotes from the field </div>-->
