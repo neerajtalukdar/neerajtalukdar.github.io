@@ -205,12 +205,14 @@
                 <div class="row">
               
                     <div class="intro-card-highlights">
-                        <p class="intro-header">Key Highlights</p>
+                        <p class="intro-header">A TLDR version of the project</p>
                         <p class="intro-explanation">
-                            The project was done initially as a POC to deliver the MVO and ensure that Cisco got an opportunity to demo the feature during Google's Next Conference. <br><br>
-                            It was later implemented as a feature as part of our on-premise agent experience, while also being planned as a cloud offering. <br><br>
+                            The project was initially done as a pilot with a couple of early adopters to deliver the MVO experience<br><br>
                             Initial concpetualization was done with the idea of thinking about the possibilities of extending the current capabilities of the integration<br><br>
-                            View the press release about the work done <a href="https://blogs.cisco.com/collaboration/cisco-contact-center-google-ai"> here</a> <br><br>                            This was my first exploration into industry based AI design work. 
+                            This was my first exploration into industry based design work in the realm of AI technologies. <br><br>
+                            Our pilot was met with success - both the customers opted in for the GA release and we got good traction in the field resulting in a significant adoption of the trials from more than 50% of our customer base <br><br>
+                            View the press release about the work done <a href="https://blogs.cisco.com/collaboration/cisco-contact-center-google-ai">here</a> <br><br>                            
+                           
                         
                             </p>
                     </div>
@@ -223,11 +225,19 @@
                     
                     </div>
                     
-                     
-                    
                     <div class="col-md-10">
                         
-                        <div class="header"> What propelled this effort in the first place? </div>
+                        <div class="header"> What problem are we trying to solve here? </div>
+                        <div>
+                            <p class="animated fadeInRight description-text">Agents in contact centers spend a significant amout of their time looking up solutions and answers to customer queries in knowledge bases. Since the major objective in these interactions is to handle the cases as soon as possible and ensure high customer satisfaction, it becomes pertinent to have a better way to have </p>
+                        </div>
+                        
+                         <div>
+                            <p class="animated fadeInRight call-out-quote">According to a survey conducted by the Aberdeen Group, agents spend 17% of their time searching for relevant knowledge to do their job. This is because most agents need access to multiple back-end systems and sources of information in real time.</p>
+                        </div>
+                        
+                        
+                        <div class="header"> What propelled this effort? </div>
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/GoogleGA.png" alt="Research" >
                         <div>
                             <p class="animated fadeInRight description-text">Google, recently announced a suite of features in the realm of Contact Center and one of the main features was Agent Assist. Live agents are empowered with continuous support during their calls, as Agent Assist transcribes calls in real time, identifies customer intent, provides real-time, step by step assistance (recommended articles, workflows, etc.), and automates call dispositions. Cisco decided to partner with Google to bring this feature to our customers. </p>
@@ -240,10 +250,10 @@
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/SystemDiagram.png" alt="System Diagram" >
                         <div>
                             <p class="animated fadeInRight description-text">The Agent Assist API was still in it's nascent stages. At the core, it was providing links to articles. However, the end goal was to provide a way of extracting and summarizing relevant snippets from the article and tailor in such a way that it could be used directly in chat messages or spoken out aloud by agents during a call. Thus, we decided to map out the overall ecosystem and understand the realm of possibilities of having the ability for an AI system understand the conversation of the call or chat conversationa and provide suggestions to agents. In essence, we identified the following touchpoints: <br><br>
-1. Customers could themeselves be suggested links to articles in a chat conversations.  <br>
+1. Customers could themselves be suggested links to articles in a chat conversations.  <br>
 2. Agents could be supported by links to documents and web-pages and also provided direct responses for usage.<br>
-                            3. An efficient way to upload and manage documents for the admin.<br>
-                            4. Supervisors to keep track of topics which would help in priortizing teams, queues and training.</p>
+3. An efficient way to upload and manage documents for the admin.<br>
+4. Supervisors to keep track of topics which would help in priortizing teams, queues and training.</p>
                         </div>
                         
                         
@@ -259,7 +269,7 @@
                         <div class="header"> The Guiding Design Principles </div>
                        
                         <div>
-                            <p class="animated fadeInRight description-text">We set out by defining a set of principles that we should account for in the design. This was done in collaboration with the Product Manager and Architect. We looked at some existing literature out there on User Experience principles when it comes to building AI based services. The most noteworthy one was the Google's <a href="https://pair.withgoogle.com/guidebook/">People + AI Guidebook </a>. Here is the set of guidelines we decided to follow in the design explorations. </p>
+                            <p class="animated fadeInRight description-text">We set out by defining a set of principles that we should account for in the design. We looked at some existing literature out there on User Experience principles when it comes to building AI based services. The most noteworthy one was the Google's <a href="https://pair.withgoogle.com/guidebook/">People + AI Guidebook </a>. Here is the set of guidelines we decided to follow in the design explorations. </p>
                             
                             <div class="row intro-section">
               
@@ -316,92 +326,75 @@
                            
                         </div>
                         
-                    <br><br><br><br>   
+                    <br><br><br><br> 
+                        
+                    <div class="header"> The Overall Feature Map </div>
+                     
+                        <div>
+                            <p class="animated fadeInRight description-text"> We went on to define a set of key specifications for the Agent Assist feature </p>
+                        </div> 
+                       
+                        
+                         <div class="card modules">
+                                 
+                            <img class="card-image" src="assets/images/portfolio/AgentAssist/stack-rank.png"  alt="Stack Rank" > <span class="key-feature-set">Suggestions should load based on order of relevance</span>
+                              
+                        </div>
+                        
+                        <div class="card modules">
+                                 
+                            <img class="card-image" src="assets/images/portfolio/AgentAssist/search.png"  alt="Search" > <span class="key-feature-set">Agents should be able to search for the documents by themselves as well</span>
+                              
+                        </div>
+                        
+                         <div class="card modules">
+                                 
+                            <img class="card-image" src="assets/images/portfolio/AgentAssist/feedback.png" alt="Feedback" > <span class="key-feature-set">Agents should be able to provide quick feedback</span>
+                              
+                        </div>
+                        
+                        
+                    
+                      
+                    <br><br><br><br>  
+                        
+                        
                     <div class="header"> Defining the Interactions</div>
                      
                         <div>
                             <p class="animated fadeInRight description-text"> We first focused on defining where the suggestions should appear in the desktop layout. After a few iterations, we agreed upon having a section for the article suggestions in the auxiliary pane. </p>
                         </div>  
-                        <img class="project-images" src="assets/images/portfolio/AgentAssist/Layout.png" alt="Layout" >
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/layout.png" alt="Layout" >
                         <div>
                             <p class="animated fadeInRight description-text">After defining the positioning of the suggestions, we focused on defining the nuanced details around these suggestions. Design decisions were taken based on the guiding principles that have been enlisted above as well and also taking into consideration the possibility of bringing in some of the ideas captured in the idea map above. </p>
                         </div> 
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-1.png" alt="Iteration" >
                         
                     <br><br><br><br>    
-                     <div class="header"> Itearting based on Feedback</div>
+                     <div class="header"> Incorporating Customer Feedback from trials</div>
                      
                         <div>
-                            <p class="animated fadeInRight description-text"> We developed an initial version for early field trials with a couple of customers who were excited to test it out . Based on the feedback we incorporated a few changes before going GA. </p>
-                        </div>  
-                        <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Feedback" >    
+                            <p class="animated fadeInRight description-text"> We developed an initial version for early field trials with a couple of customers who were excited to test it out. Based on the feedback we incorporated a few changes before going GA. </p>
+                            
+                          
+                            <p class="animated fadeInRight description-text"> In essence, we identified the following major feedback ppoints: <br><br>
+                                1. The reason for a particular suggestion being proposed was not very clear. <br>
+                                2. The confidence score number was not that meaningful. Agents were mostly interested in the top 1-2 suggestions. <br>
+                                3. Sometimes, the snippet itslef would be enough to get to the answer. Limiting the line length to 2-3 lines would require them to go the link repeatedly.<br>
+                               
+                            
+                             <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Iteration" >
+                        </div>
+                       
                       
                     <br><br><br><br>     
                     <div class="header"> Results from this project </div>
                      
                         <div>
-                            <p class="animated fadeInRight description-text"> The announcement of Ga of this feature was met with alot of excitement in the field. </p>
+                            <p class="animated fadeInRight description-text"> The announcement of GA for this feature was met with a lot of excitement in the field. </p>
                         </div>  
                        
-                  
-                       
-                        
-<!--                        <div class="header"> Quotes from the field </div>-->
-<!--
-                        <div>
-                            <p class="quotes">"We use so many modules…If we can get all that into one, or two places, that would be great
-"</p>
-                        </div>
--->
-                        
-<!--
-                        <div class="keypoint">
-                        <div class="header"> Key Insights </div>
-                        <div>
-                            <p class="animated fadeInRight description-text">- There is no one size fits all desktop. Customers want flexibility in defining their own experience. This becomes critical 
-   for customers who want to migrate from on-prem to cloud, as they have the ability to build and manage their own
-   gadgets on-prem. Thus, there needs to be a way to have flexibility in building out the agent desktop in terms of 
-                                integrations, widgets, layout they would want for their organization. <br /> <br /> 
-
-- There is no on-boarding experience at all. Agents have to undergo extensive training to get onboarded to the UI. Also
-   this requires them to undergo everytime there is a feature update. <br /> <br /> 
-
-- Agents often use the agent desktop in conjunction with several other applications, websites, CRM systems etc. There is  steep learning curve involved with this framework and agents get used to the multi-tab multi-window approach over a period of time. A pattern of usage observed was minimizing the view. <br /> <br /> 
-
-- A lot of the everyday interactions require agents to perform menial, monotonous tasks like searching for knowledge base
-   articles and responses which takes up a lot of the agents' time. <br /> <br /> 
-
-- Overall experience is broken as agents use a bunch of different tool and applications to get to the relevant information
-   about the customer and identifying the best possible way to resolve their query/issue. <br /> <br /> 
-
-- There is no proper way for agents to track their performance over time and get an undersatnding of how they are faring
-   as compared to others, ways in which they can improve.</p>
-                        </div>
-                        </div>
--->
-<!--
-                        <div class="header"> Outcome </div>
-                        <img class="project-images" src="" alt="Research" >
-                        <div>
-                            <p>We identified 4 main efforts coming out of this research study:
-                                
-                            </p>
-                            <p>
-                            1. Fixing short-term issues and gaps with the current agent desktop solution. The objective was to address some of the low-hanging fruits and also make strategic moves in the direction of new agent desktop experience being worked upon in the background. Also aligning the overall experience with that of the rest of Webex portfolio. One strategic move in that direction was to change the look and feel to align with the Momentum Design system. This was primarily supported by Mocha, the visual designer in the project, with myself providing guidance from an overall experience perspective ensuring that all the scenarios were being covered. <br/><br/>
-                                2. The re-imagination and conceptualization of a new agent desktop experience. This was based on the research findings, competitor analysis and also with the business objective of migration of an enormous customer base from the on-prem solution to the cloud solution. <a href="password/password.html">View details of the project here</a><br/><br/>
-3. An agent desktop layout builder experience to support partner customizations and integrations. This was mostly driven by Karen Song, an intern in our team. She led a few webex calls with partners and customers and started off with some initial explorations. I acted as a mentor for this sub-project in the initial phases and took over from her once she completed her internship. <a href="password/password.html">View details of the project here</a> <br/><br/>
-4. Defining a supervisor desktop experience - who act as super agents and help manage teams, queues, analyze performance and provide guidance and coaching to agents. In the solution we inheritted, we did not have a consolidated experience as such.    <a href="password/password.html">View details of the project here</a>
-                                
-                             
-                          
-                        </div>
--->
-                        
-                    
-                    
-                        
-                    
-                </div>
+               </div>
                         </div> </div>
                     <div class="col-md-1">
                     
