@@ -366,24 +366,41 @@
                         </div>  
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/layout.png" alt="Layout" >
                         <div>
-                            <p class="animated fadeInRight description-text">After defining the positioning of the suggestions, we focused on defining the nuanced details around these suggestions. Design decisions were taken based on the guiding principles that have been enlisted above as well and also taking into consideration the possibility of bringing in some of the ideas captured in the idea map above. </p>
+                            <p class="animated fadeInRight description-text">After defining the positioning of the suggestions, we focused on defining the nuanced details around these suggestions. Design decisions were taken based on the guiding principles that have been enlisted above as well and also taking into consideration the possibility of bringing in some of the ideas captured in the idea map above. <b>We wanted to keep the cards for suggestions uniform such that the name of the document/article would be at the top and act as the link and have card height uniform for all suggestions. </b></p>
                         </div> 
-                        <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-1.png" alt="Iteration" >
+                        <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-1.png" alt="Iteration 1" >
                         
                     <br><br><br><br>    
                      <div class="header"> Incorporating Customer Feedback from trials</div>
                      
                         <div>
-                            <p class="animated fadeInRight description-text"> We developed an initial version for early field trials with a couple of customers who were excited to test it out. Based on the feedback we incorporated a few changes before going GA. </p>
+                            <p class="animated fadeInRight description-text"> We developed an initial version for early field trials with a couple of customers who were excited to test it out. Based on the feedback we incorporated a few changes before going GA. 
                             
                           
-                            <p class="animated fadeInRight description-text"> In essence, we identified the following major feedback ppoints: <br><br>
-                                1. The reason for a particular suggestion being proposed was not very clear. <br>
-                                2. The confidence score number was not that meaningful. Agents were mostly interested in the top 1-2 suggestions. <br>
-                                3. Sometimes, the snippet itslef would be enough to get to the answer. Limiting the line length to 2-3 lines would require them to go the link repeatedly.<br>
+                           In essence, we identified the following major feedback points: <br><br>
+                                1. Truncation of the document name by limiting it to 60% of the top line was not ideal as the latter half of some of the names would be the unique identifier and help in decision making.<br>
+                                2. The reason for a particular suggestion being proposed was not very clear. <br>
+                                3. The confidence score number was not that meaningful. Agents were mostly interested in the top 1-2 suggestions. <br>
+                                4. Sometimes, the snippet itself would be enough to get to the answer. Limiting the line length to 2-3 lines would require them to go the link which was frustrating.<br>
+                                5. Feedback would not be provided immediately as a habit. It would be more ideal to do that during the wrap-up state.<br>
+                                6. There was some confusion around the word search as a tab. Some agents thought that it was a search on the suggestions itself. <br>
+                                
+                              </p> 
+                            
+                             <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Iteration 2" >
+                        </div>
+                        
+                        
+                        
+                         <p class="animated fadeInRight description-text"> Based on the feedback, we decided to make a few key changes:<br><br>
+                                1. We removed the icons for upvote downvote to the bottom section to allow for more screen-estate for the name. <br>
+                                2. The dedicated footer area now also displayed some top key-phrases that were parsed by the AI engine. <br>
+                                3. We had a call-out for only the top most suggestion. For the remainder, it was anyways stack ranked. <br>
+                                4. The card height was expanded to have 6 lines of text from 2. We identified that showing more information upfront for each card was more important than showing more suggestions in a singke view for which they can scroll anyways and the chanes of someone going to the lower ranked suggestions is rare. We also gave the flexibility to expand the card and display more text if required for ones where the recommendation snippet is larger.<br>
+                                5. We displayed the suggestions in the wrap-up phase and asked for optional feedback. If upvoted, it was by default captured as part of the notes summary.<br>
+                                6. We changed the name of the 2nd tab to Knowedge Base to make it more explicit.
                                
                             
-                             <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Iteration" >
                         </div>
                        
                       
