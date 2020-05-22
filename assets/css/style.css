@@ -497,11 +497,12 @@ Card layout
 }
 
 .call-out-quote{
+    padding-bottom: 40px;
     font-family: "Dosis", sans-serif;
 	font-size: 24px;
-	font-style: normal;
+	font-weight: bold;
 	font-variant: normal;
-	font-weight: 500;
+	color: #111;
     text-align: center;
 }
 
