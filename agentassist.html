@@ -207,10 +207,12 @@
                     <div class="intro-card-highlights">
                         <p class="intro-header">A TLDR version of the project</p>
                         <p class="intro-explanation">
-                            The project was initially done as a pilot with a couple of early adopters to deliver the MVO experience<br><br>
-                            Initial concpetualization was done with the idea of thinking about the possibilities of extending the current capabilities of the integration<br><br>
-                            This was my first exploration into industry based design work in the realm of AI technologies. <br><br>
-                            Our pilot was met with success - both the customers opted in for the GA release and we got good traction in the field resulting in a significant adoption of the trials from more than 50% of our customer base <br><br>
+                            The project was initially done as a pilot with a couple of early adopters to deliver the MVO experience.<br><br>
+                            Initial concpetualization was done with the idea of thinking about the possibilities of extending the current capabilities of the integration.<br><br>
+                            We shipped the MVO with the essential idea of suggestions loading in cards based on the context of the conversation.<br><br>
+                            Our pilot was met with success - both the customers opted in for the GA release and we got good traction in the field resulting in a significant adoption of the trials from more than 50% of our customer base. <br><br>
+                            Customers reported on an average of 18% reduction in handle time for agents over a period of 3 months of usage. <br><br>
+                            I learnt some good design principles for AI based experiences based on existing literature and implementation of the feature. <br><br>
                             View the press release about the work done <a href="https://blogs.cisco.com/collaboration/cisco-contact-center-google-ai">here</a> <br><br>                            
                            
                         
@@ -229,7 +231,7 @@
                         
                         <div class="header"> What problem are we trying to solve here? </div>
                         <div>
-                            <p class="animated fadeInRight description-text">Agents in contact centers spend a significant amout of their time looking up solutions and answers to customer queries in knowledge bases. Since the major objective in these interactions is to handle the cases as soon as possible and ensure high customer satisfaction, it becomes pertinent to have a better way to have </p>
+                            <p class="animated fadeInRight description-text">Agents in contact centers spend a significant amout of their time looking up solutions and answers to customer queries in knowledge bases. Since the major objective in these interactions is to handle the cases as soon as possible and ensure high customer satisfaction, it becomes pertinent to have a <b>better way for agents to identify relevant articles to refer. </b></p>
                         </div>
                         
                          <div>
@@ -240,7 +242,7 @@
                         <div class="header"> What propelled this effort? </div>
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/GoogleGA.png" alt="Research" >
                         <div>
-                            <p class="animated fadeInRight description-text">Google, recently announced a suite of features in the realm of Contact Center and one of the main features was Agent Assist. Live agents are empowered with continuous support during their calls, as Agent Assist transcribes calls in real time, identifies customer intent, provides real-time, step by step assistance (recommended articles, workflows, etc.), and automates call dispositions. Cisco decided to partner with Google to bring this feature to our customers. </p>
+                            <p class="animated fadeInRight description-text">Google, recently announced a suite of features in the realm of Contact Center and one of the main features was Agent Assist. Live agents are empowered with continuous support during their calls, as Agent Assist transcribes calls in real time, identifies customer intent, provides real-time, step by step assistance (recommended articles, workflows, etc.), and automates call dispositions. <b>Cisco decided to partner with Google to bring this feature to our customers. </b></p>
                         </div>
                             
                         
@@ -366,7 +368,7 @@
                         </div>  
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/layout.png" alt="Layout" >
                         <div>
-                            <p class="animated fadeInRight description-text">After defining the positioning of the suggestions, we focused on defining the nuanced details around these suggestions. Design decisions were taken based on the guiding principles that have been enlisted above as well and also taking into consideration the possibility of bringing in some of the ideas captured in the idea map above. <b>We wanted to keep the cards for suggestions uniform such that the name of the document/article would be at the top and act as the link and have card height uniform for all suggestions. </b></p>
+                            <p class="animated fadeInRight description-text">After defining the positioning of the suggestions, we focused on defining the nuanced details around these suggestions. Design decisions were taken based on the guiding principles that have been enlisted above as well and also taking into consideration the possibility of bringing in some of the ideas captured in the idea map above. <b>We wanted to keep the cards for suggestions uniform such that the name of the document/article would be at the top and act as the link and have card height uniform for all suggestions. </b> We also wanted to keep the suggestion non-intrusive thus more relevant tabs like Customer Information and Contact History were prioritized over Agent Assist. But to convey that suggestions were ready for usage, we had a notification badge appearing next to the icon.</p>
                         </div> 
                         <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-1.png" alt="Iteration 1" >
                         
@@ -378,7 +380,7 @@
                             
                           
                            In essence, we identified the following major feedback points: <br><br>
-                                1. Truncation of the document name by limiting it to 60% of the top line was not ideal as the latter half of some of the names would be the unique identifier and help in decision making.<br>
+                                1. Truncation of the document name by limiting it to the top line(and dedicating the remainder of the area to the feedback icons) was not ideal as the latter half of some of the document/webpage names would be the unique identifier and help in decision making.<br>
                                 2. The reason for a particular suggestion being proposed was not very clear. <br>
                                 3. The confidence score number was not that meaningful. Agents were mostly interested in the top 1-2 suggestions. <br>
                                 4. Sometimes, the snippet itself would be enough to get to the answer. Limiting the line length to 2-3 lines would require them to go the link which was frustrating.<br>
@@ -387,37 +389,48 @@
                                 
                               </p> 
                             <p class="call-out-quote"> 
-                            I would rather have the relevant answer shown right there, than having to go to the link again and search for it using those keywords and it seems like the answer is right there... so it is a bit frustrating.
+                            "I would rather have the relevant answer shown right there, than having to go to the link again and search for it using those keywords and it seems like the answer is right there... so it is a bit frustrating." 
                             
                             </p>
                             
                             
-                             <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Iteration 2" >
+                             <img class="project-images" src="assets/images/portfolio/AgentAssist/suggestion-details-2.png" alt="Iteration 2">
                         </div>
                         
                         
                         
                          <p class="animated fadeInRight description-text"> Based on the feedback, we decided to make a few key changes:<br><br>
-                                1. We removed the icons for upvote downvote to the bottom section to allow for more screen-estate for the name. <br>
+                                1. We removed the icons for upvote/downvote to the bottom section to allow for more screen-estate for the name.<br>
                                 2. The dedicated footer area now also displayed some top key-phrases that were parsed by the AI engine. <br>
                                 3. We had a call-out for only the top most suggestion. For the remainder, it was anyways stack ranked. <br>
                                 4. The card height was expanded to have 6 lines of text from 2. We identified that showing more information upfront for each card was more important than showing more suggestions in a singke view for which they can scroll anyways and the chanes of someone going to the lower ranked suggestions is rare. We also gave the flexibility to expand the card and display more text if required for ones where the recommendation snippet is larger.<br>
                                 5. We displayed the suggestions in the wrap-up phase and asked for optional feedback. If upvoted, it was by default captured as part of the notes summary.<br>
                                 6. We changed the name of the 2nd tab to Knowedge Base to make it more explicit.
                                
+                             
+                         <br><br>     
+                        <div class="header">Some Key Metrics</div>
+                        <div>
+                            <p class="animated fadeInRight description-text"> Our two customers were significantly convinced by the usefulness of the agent assist feature and decided to purchase the license. The announcement of GA for this feature was met with a lot of excitement in the field and we had more than 50% of our customers signed up for a 30 day trial phase. More than 90% of them eventually subscribed for it. Customers reported a drop of approx 18% in handle time on an average over a sustained use of 3 months. Also as part of the solution (after the feature went live), we experimented in providing a simple topic modeling visualization for an admin/supervisor use-case to a select set of customers which helped them in identifying popular themes of conversations and help in better distribution of agents across teams and also in improving their own knowledge bases. We later added this dashboard in our Reporting module. </p>
+                            
+                            <p class="call-out-quote"> 
+                            "Our agents really appreciate this new feature, it has made their work significantly easier. We would love to see this get even better over time."  
+                            </p>
+                            
+                        </div>  
+                          
+                        
+                        <div class="header"> Learnings from this project</div>
+                        <div>
+                            <p class="animated fadeInRight description-text"> This project was very unique in the sense that we had to engage with stakeholders outside Cisco - Google's Engineers and Product Managers on a weekly basis initially. It was my first exploration in the domain of AI based experiences in an industry setting. I learnt some essential ideas around recommender based systems in general. I also learnt a lot from existing literature on AI based UX. This helped in defining some design principles and it was enlightening to use those principles in practise and get feedback from customers and improve on the design based on quick feedback from the early trials.</p>
+                        </div>  
                             
                         </div>
                        
                       
-                    <br><br><br><br>     
-                    <div class="header"> Results from this project </div>
-                     
-                        <div>
-                            <p class="animated fadeInRight description-text"> The announcement of GA for this feature was met with a lot of excitement in the field. </p>
-                        </div>  
-                       
-               </div>
-                        </div> </div>
+                   
+                        </div>
+                    </div> 
                     <div class="col-md-1">
                     
                     </div>
@@ -565,7 +578,7 @@
 		</footer>
 		<!-- /FOOTER -->
 
-	</div>
+	
 	<!-- /WRAPPER -->
 
 	<!-- SCROLLTOP -->
