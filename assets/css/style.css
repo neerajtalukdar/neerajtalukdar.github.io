@@ -438,6 +438,11 @@ Card layout
    
 }
 
+.about-explanation{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: black;  
+}
 
 .intro-explanation{
     font-family: 'Open Sans';
