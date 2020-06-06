@@ -460,7 +460,7 @@ Card layout
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
     margin-right: 3%;
     margin-bottom: 10px;
-    border-top: 3px solid green;
+    border-top: 3px solid #CCAAFF;
 }
 
 
@@ -480,6 +480,16 @@ Card layout
     padding: 2px 16px;
     
 }
+
+
+.vertical-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display:inline-block;
+}
+
+
 
 .intro-image{
 /*
@@ -1853,7 +1863,7 @@ Works item
 
 .modules{
   margin-bottom: 20px;  
-    border-radius: 6px;    
+  border-radius: 6px;    
 }
 
 .card-image{
