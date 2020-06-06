@@ -463,6 +463,17 @@ Card layout
     border-top: 3px solid #CCAAFF;
 }
 
+.body-card-2{
+    width: 23%;
+    float: left;
+    padding-top: 2px;
+    padding-left: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    margin-right: 1%;
+    margin-bottom: 10px;
+    border-top: 3px solid #CCAAFF;
+}
+
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -1776,8 +1787,6 @@ Works item
     font-variant: normal; 
     font-weight: 500; 
 	color: rgba(255, 255, 255, 0.75);
-   
-    
 }
 
 .quotes{
@@ -1787,7 +1796,6 @@ Works item
     padding-left: 10px;
     font-size: 20px;
     font-style: italic;
-
 }
 
 
@@ -1796,7 +1804,6 @@ Works item
     padding-left: 10px;
     font-size: 24px;
     font-style: italic;
-
 }
 
 
@@ -1807,9 +1814,6 @@ Works item
     padding-left: 30px;
     padding-right: 30px;
     background-color: #D8F1FF;
-
-   
-
 }
 
 
@@ -1844,7 +1848,7 @@ Works item
 
 .description-text{
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-family: 'Open Sans';
     font-size: 16px;
     color: #333333
