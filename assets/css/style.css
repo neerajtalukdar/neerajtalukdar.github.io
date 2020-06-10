@@ -409,10 +409,23 @@ Card layout
     width: 30%;
     float: left;
     padding-top: 8px;
-    padding-left: 20px;
+    padding-left: 24px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
     margin-right: 3%;
     border-top: 3px solid black;
+    
+}
+
+.intro-card-full-width{
+    background-color: #ccccff; 
+    width: 98%;
+    margin-top: 12px;
+    padding-top: 12px;
+    padding-left: 24px;
+    margin-right: %;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #000000;
     
 }
 
@@ -421,8 +434,8 @@ Card layout
     background-color: #a8edcb; 
     width: 96%;
     margin-top: 12px;
-    padding-top: 8px;
-    padding-left: 20px;
+    padding-top: 12px;
+    padding-left: 24px;
     margin-right: 3%;
     border-style: dashed;
     border-width: 2px;
