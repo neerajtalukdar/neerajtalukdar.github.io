@@ -443,6 +443,29 @@ Card layout
     
 }
 
+.long-card{
+    padding:30px;
+    margin:30px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    height; 30px;
+}
+
+.long-card-image{
+   
+    
+   margin-top:20px;
+   max-width:100%;
+    height:auto;
+    
+}
+
+.long-card-text{
+   
+    overflow: hidden;
+    
+    padding-bottom: 30px;
+}
+
 .intro-header{
     font-family: 'Open Sans';
     font-weight: bold;
@@ -1851,6 +1874,7 @@ Works item
     font-size: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
+   
     color: black;
 }
 
