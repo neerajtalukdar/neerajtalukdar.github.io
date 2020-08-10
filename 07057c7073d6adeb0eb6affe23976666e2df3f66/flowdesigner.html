@@ -176,12 +176,12 @@
               
                     <div class="col-md-4">
                         <p class="intro-header">Project Overview</p>
-                        <p class="intro-explanation">This project is focused on creating a GUI based tool for building contact center based processes like routing pathways that the customer experiences. The current scripting tool we have was lacking in a lot of aspects. Since this is one of the most critical functionalities of any contact center and with the current tool</p>
+                        <p class="intro-explanation">This project is focused on creating a GUI based tool for building contact center based processes like routing pathways that the customer experiences. The current scripting tool we have is lacking in a lot of aspects. Since this is one of the most critical functionalities of any contact center and with the current paradigm requiring a lot of handholding from professional services teams in helping customers build out custom scripts for meeting their requirements, it was mission critical for us to drastcially improve our current scripting experience.</p>
                     </div>
                     
                     <div class="col-md-4">
                         <p class="intro-header">Solution</p>
-                        <p class="intro-explanation">We identified key gaps in the existing experience by speaking with existing users of the tool. We evaluated existing solutions out there in the market to set a competitive benchmark and defined a high-level experience before we started off with detailed designs for individual features. </p>
+                        <p class="intro-explanation">We identified key gaps in the existing experience by speaking with existing users of the tool. We evaluated existing solutions out there in the market to set a competitive benchmark and defined a high-level experience before we started off with detailed designs for individual features. The new tool, called Flow Designer is a significant enhancement on the existing experience and aims to be a critical piece in our suite of products to achieve the vision of a programmatic contact center. </p>
                     </div>
                     
                     <div class="col-md-4">
@@ -199,9 +199,9 @@
                     <div class="intro-card-highlights">
                         <p class="intro-header">A TLDR version of the project</p>
                         <p class="intro-explanation">
-                            We re-designed the existing scripting tool to a significantly advanced one keeping in mind the vision for enabling a programmatic contact center. <br><br>
-                            We did a round of usability testing on the MVO features we had built for GA<br><br>
-                            We worked on enhancements based on the feedback received and continue to design and build for features beyond MVO <br><br>
+                            We re-designed the existing scripting tool to a significantly advanced one which would be crritical in achieeving the vision of a programmatic contact center. <br><br>
+                            We did a round of usability testing on the MVO features we had built for GA. <br><br>
+                            We are working on enhancements based on the feedback received and continue to design and build for features beyond MVO. <br><br>
                             </p>
                     </div>
                 </div>
@@ -217,74 +217,88 @@
                     
                     <div class="col-md-8">
                         
-                        <div class="header"> Scripting tools in Contact Center </div>
+                        <div class="header"> Scripting Tools in Contact Center </div>
                         <div>
                             <p class="animated fadeInRight description-text">
-                                </p>
-                            <img src="assets/images/portfolio/AgentDesktop/agent-in-cc-2.png" alt="agent in contact center" >
+                            For any Contact Center, one of the most critical tools required to ensure smooth functioning of the organization is the routing logic builder which the administrator or developer will use to define the customer's experience and the flow logic that will result in the best possible experience for the customers. For eg. Sending the customerrs to the appropriate team of agents which could besst handle their request. A typical example that everyone faces is the IVR experience which asks us to select a number from thee dialpad to route us to an agent.
+                            </p>
+                           
                         </div>   
                         
                         
-                        <div class="header">Current Trends</div>
+                         <div class="header"> What is Flow Designer? </div>
                         <div>
                             <p class="animated fadeInRight description-text">
-                               </p>
+                           Flow Designer is a visual scripting tool that allows users to build any type of automated experience forr Contact Center use-cases. Think of it as the pre-frontal cortex of the contact center’s brain. It enables robotic process automation by receiving events, making a determination of what to do next, and orchestrating it. We needed to build out a new tool to replace the existing scripting tool, which was lacking in several aspects and required a lot of support from our Professional Services team to enable building flows and scripts which should otherwise be possible.
+                            </p>
+                            <img src="assets/images/portfolio/FlowDesigner/flow-example.png" alt="flow example" >
                         </div>  
+                        
+                        <br><br>
+                        
+                        
                         
                         <div class="header">The Strategic Goals</div>
                         <div>
                             <p class="animated fadeInRight description-text">
-                                Our vision is to simplify this object model and capture end-to-end treatment and routing into a single flow that can be mapped to an entry point.   </p>
+                                <img src="assets/images/portfolio/FlowDesigner/routing-strategy.png" alt="routing strategy" >
+                                <br>  <br>
+                                We primarily had two strategic goals. The current approach for setting up routing strategies was super complicated and split up into types- Entry Point Routing Strategies and Queue Routing Strategies. We wanted to simplify that model to facilitate an easy mechanism of creating routing strategies through a single end-to-end unified flow. The othe goal was to have Flow Designer as the single go to tool for enabling the creation of any kind of logic driven flows based on events. This would lead to the grander vision of achieveing the status of a <b>truly programmatic contact center. </b></p>
                         </div>  
                         
                             <br><br>  
                         
-                            <div class="header">Process Overview </div>
+                            <div class="header">Process Overview</div>
 
-                            <p class="animated fadeInRight description-text"> Although the work cannot be displayed on a public facing domain yet, I wanted to highlight the process followed. At a high level, this is what the it looked like: </p>    
+                            <p class="animated fadeInRight description-text">At a high level, this is what the process has looked like so far:</p>    
                                 <div class="long-card">
                                     <div class="sub-header">Competitor Analysis</div>
-                                    <div class="long-card-image"><img src=""></div>
+                                    <div class="long-card-image"><img src="assets/images/portfolio/FlowDesigner/twilio.png"></div>
                                     <div class="description-text">
-                                    We visited 5 sites and talked to 17 agents, 7 supervisors, 5 administrators and 5 report designers spanning 2 weeks and across mutiple cities - Phoenix, Atlanta, Dallas, Pittsburgh and Asheville. The objective was to understand current painpoints with the solution and also observe them in the contact center settings. My primary focus was on the Agent persona. 
+                                    We looked at some competitor products in this space, viz. Twilio, InContact, NICE to understand the different approaches taken by the respective scripting products. We also analyzed our own CVP scripting tool for our on-prem product which was mostly meant for power users who are comforrtable with scripting.    
                                     </div>    
                                 </div>
                                 
-                               
+                              
                                 <div class="long-card">
+                                    <div class="sub-header">Initial Research and Requirements Gathering </div>
+                                
+                                    <div class="description-text"> We set up calls with our some of our internal users primarily Professsional Services members and folks from the Customer Success Management team who are heavy users of the existing Control Script tool which they use to build flows for the customers and who have tons of experience in listening to customer feature requests and enhancements. 
+                                    There were three primary objectives: <br><br>
+1. Identification of critical use cases to pursue after we achieve feature parity. <br>
+2. Collection of custom flows commonly being requested from Professional Services. <br>
+3. Identification of pain-points of existing users (e.g. not being able to copy flows, share flows across customers, normalize flow experience across channels, etc.) 
+                                    </div>    
+                                </div>
+                        
+                        <div class="long-card">
                                     <div class="sub-header">Conceptualization and Roadmap</div>
-                                    <div class="long-card-image"><img src=""></div>
+                                    <div class="long-card-image"><img src="assets/images/portfolio/FlowDesigner/experience-builder.png"></div>
                                     <div class="description-text">
-                                    We narrowed down our ideas from the brainstorming session and broke them down into a phased approach. This was required to plan out the roadmap of the product. This exercise was enriching and enlightening from a UX standpoint as I worked closely with the PM to help come up with the overall breakdown of the planned features across multiple phases. We used an impact feasibility matrix to help with this breakdown apart from the data we had already gathered form our field reserach. 
+                                   We first focused on getting the skeleton framework right. Once that was decided upon after several layouts, we started building on top of it to create an initial set of wireframes and concepts which we worked very closely withe Product Manager and the Architect to set the groundwork. Paralelly, we also worked with the Product Manager to help come up with an initial roadmap of the product for the next 3 quarters. This helped us in prioritizaing our deetailed design efforts.
                                     </div>    
                                 </div>
-                        
-                                <div class="long-card">
-                                    <div class="sub-header">Layout Iterations and Information Architecture</div>
-                                    <div class="long-card-image"><img src=""></div>
+        
+                    
+                             <div class="long-card">
+                                    <div class="sub-header">Building out the MVO feature sets</div>
+                                   
                                     <div class="description-text">
-                                    The layout and IA was one of the most critical sections of this effort. We came up with a lot of iterations and options to arrive at an optimal solution. This work helped the UI architect plan out the development work much in advance. 
-                                    </div>    
-                                </div>
-                        
-                        
-                                <div class="long-card">
-                                    <div class="sub-header">Wireframing and Component level approach</div>
-                                    <div class="long-card-image"><img src=""></div>
-                                    <div class="description-text">
-                                    We started with creating wireframes and focusing on individual components within Agent Desktop. This component based approach also helped the Development team with their work as they were planning to use Web Components as part of the overhaul in the UI Architecture.
+                                   From the roadmap generated based on the discussions and feedback received from customers and support teams, we identified some strategic features which we needed to have by General Availability. Then the two of us (IxD) split up the work to own individual feature sets while working with the visual designer to incrementally build out the feature seets over the next few quarters.
                                     </div>    
                                 </div>
                         
                         
                         
                              <div class="long-card">
-                                    <div class="sub-header">Detailed Designs and Implementation Support</div>
-                                   
+                                    <div class="sub-header">Quick Usability Testing</div>
+                                   <div class="long-card-image"><img src="assets/images/portfolio/FlowDesigner/testing.png"></div>
                                     <div class="description-text">
-                                    Based on agreement reached on the high-level wire-frames and the roadmap defined for the product, we started working on the detailed designs. This has been a highly iterative process with feedback received and worked upon over multiple rounds starting from a product leadership level down to Engineering level support durring implementation. 
+                                  Once some of the key features were built out, we set up a usability testing session with 5 users spanning across different levels of experience and background to test out whatever had been implemented so far. This was an interesting experience as some of the features were still being vuilt out and we needed to add disclaimers at the beginning of the session to call this out. Although some of the issues encountered by the users during the session were obvious ones as a result of something we knew was broken and needed to be fixeed or was in porgress work, we definitely received quite a lot of useful feedback which we could start workring on immediately and this helped us get ahead and saved time as the date for GA was fast approaching. Designw ork on these enhancements are currently in progress.
                                     </div>    
-                                </div>
+                            </div>
+                        
+                        
                         
                              <div class="card modules">
 
